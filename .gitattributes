@@ -1,0 +1,4 @@
+# Muvyo addon 仓库：文件字节必须原样保留。
+# 插件签名（signature.json）绑定每个文件的 sha256，任何换行转换（LF<->CRLF）
+# 都会让哈希对不上，导致 Muvyo 拒绝安装。禁用一切文本转换。
+* -text

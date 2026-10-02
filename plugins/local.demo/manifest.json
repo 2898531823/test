@@ -1,0 +1,31 @@
+{
+  "api": 1,
+  "id": "local.demo",
+  "name": "本地示例插件",
+  "version": "1.0.0",
+  "author": "local",
+  "description": "演示 Muvyo 四类能力（search / vlib / content / metadata）的自写插件模板。",
+  "entry": "main.js",
+  "permissions": {
+    "domains": ["api.example.com"]
+  },
+  "config": [
+    {"key": "token", "label": "访问令牌", "type": "secret", "required": false, "help": "示例站点的令牌"},
+    {"key": "size", "label": "每次条数", "type": "number", "min": 1, "max": 50, "step": 1, "unit": "条", "default": "20"},
+    {"key": "enable_search", "label": "启用搜索", "type": "bool", "default": "true"}
+  ],
+  "settings": {
+    "description": "这是一个本地自签示例插件。",
+    "links": [{"title": "插件开发指南", "url": "https://github.com/thsrite/muvyo-addon-guide"}],
+    "sections": [
+      {"title": "账号", "fields": ["token"]},
+      {"title": "结果", "fields": ["size", "enable_search"]}
+    ]
+  },
+  "capabilities": {
+    "search": {"link_types": ["115", "magnet"], "supports_tmdb": false, "resolve": false, "resolve_cost": "none"},
+    "vlib": {"lists": [{"key": "hot", "name": "热门电影", "media_type": "movie"}]},
+    "content": {"categories": true, "search": true},
+    "metadata": {"media_types": ["movie", "tv"]}
+  }
+}

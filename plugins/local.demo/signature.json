@@ -1,0 +1,25 @@
+{
+ "version": 1,
+ "certificate": {
+  "certificate": {
+   "author_id": "gh-100000001",
+   "author": "local",
+   "namespace": "local",
+   "serial": 1,
+   "public_key": "ddK+l0TSimBDxcTqszHU6ObyWkKpQY1TCplnXI9CK2A=",
+   "expires_at": 2106273620,
+   "content_key": "6D6iI8wpLyYLYA0VCWaHGBV9CoKfwgJXUt1nnS/x+Dg=",
+   "content_key_version": 1
+  },
+  "signature": "k+VmoZBbcCkaRbIY+nJtvJsbGDZ7/ZfFVojSyJIAe1InxpCqTWfRscrYHtHFNZIC93ycdkBubSFdvhpHuMAdDw=="
+ },
+ "payload": {
+  "plugin_id": "local.demo",
+  "version": "1.0.0",
+  "files": {
+   "main.js": "f9ae1eb65f2bcd8eddcb835df2814f7874fa8578dab09e90c1d0c6a5492d7d18",
+   "manifest.json": "2558bc07c3eab1f24f9e52a9e016bca22d415229e462ce72d4e1972c80600846"
+  }
+ },
+ "signature": "oAEmucaItaQML15dfKqo2W/g3GoRtBmER+dqTSXHPLLE22fWKJCDxiclIs63apFR7DbFGAEytIiIMz4pQ0uoDw=="
+}

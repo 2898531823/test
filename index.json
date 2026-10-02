@@ -1,0 +1,15 @@
+{
+ "name": "本地插件仓库",
+ "sequence": 2,
+ "plugins": [
+  {
+   "id": "local.demo",
+   "name": "本地示例插件",
+   "version": "1.0.0",
+   "description": "演示 Muvyo 四类能力（search / vlib / content / metadata）的自写插件模板。",
+   "author": "local",
+   "path": "plugins/local.demo",
+   "api": 1
+  }
+ ]
+}
